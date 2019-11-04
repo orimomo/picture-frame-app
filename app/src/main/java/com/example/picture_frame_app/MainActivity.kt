@@ -16,7 +16,7 @@ class MainActivity : AppCompatActivity() {
 
         val button = findViewById<Button>(R.id.button)
         button.setOnClickListener {
-            selectPicture()
+            selectPhoto()
         }
     }
 
@@ -41,7 +41,7 @@ class MainActivity : AppCompatActivity() {
         }
     }
 
-    private fun selectPicture() {
+    private fun selectPhoto() {
         val intent = Intent(Intent.ACTION_OPEN_DOCUMENT).apply {
             addCategory(Intent.CATEGORY_OPENABLE)
             type = "image/*"
